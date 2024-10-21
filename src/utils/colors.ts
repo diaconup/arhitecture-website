@@ -1,6 +1,7 @@
 export const Colors = {
     WHITE: '#ffffff',
     BLACK: '#000000',
-    LIGHT_GREY: '#1b1b1b',
+    LIGHT_GREY: '#6b6b6b',
     WHITE_OPACITY_10: '#ffffff22',
+
 };

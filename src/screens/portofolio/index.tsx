@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Portofolio = () => {
   return (
-    <div>Portofolio</div>
-  )
-}
+    <div className="font-medium">Portofoliul meu</div>
+  );
+};
 
-export default Portofolio
+export default Portofolio;

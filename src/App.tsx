@@ -1,24 +1,26 @@
 
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import CustomHeader from './navigation/CustomHeader';
 import Contact from './screens/contact';
 import About from './screens/about';
 import Portofolio from './screens/portofolio';
+import { useCallback, useState } from 'react';
 
-function App() {
+export default function App() {
+  const [activePage, setActivePage] = useState<string>('portfolio');
+
+  const showPage = useCallback((page: string) => {
+    setActivePage(page);
+  }, []);
+
   return (
     <>
-      <CustomHeader />
+      <CustomHeader showPage={showPage} />
       <div>
-        <Routes>
-          <Route path="/" element={<Portofolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {activePage === 'portfolio' && <Portofolio />}
+        {activePage === 'about' && <About />}
+        {activePage === 'contact' && <Contact />}
       </div>
-      </>
+    </>
   );
 }
-
-export default App;
