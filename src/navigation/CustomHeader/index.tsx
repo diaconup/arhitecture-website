@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { styles } from './styles';
-import ListItem from '../../components/ListItem';
+import ListItem from '../../components/NavItem';
 
 type CustomHeaderProps = {
   showPage: (page: string) => void;
@@ -10,7 +10,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({ showPage }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number, page: string): void => {
-    setActiveIndex(index); 
+    setActiveIndex(prevIndex => (prevIndex === index ? null : index)); 
     showPage(page);
   };
 

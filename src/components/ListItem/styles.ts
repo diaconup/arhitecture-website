@@ -1,46 +1,30 @@
-import { Colors } from '../../utils/colors';
-import { FontTypes } from '../../utils/const';
-import './keyframes.css';
-
 export const styles = {
-  navItem: {
-    fontFamily: FontTypes.MEDIUM,
+  container: {
     display: 'flex',
     alignItems: 'center',
-    padding: '5px 10px', 
+    padding: '10px',
+    borderBottom: '1px solid #ddd',
   },
-  navLink: {
-    textDecoration: 'none',
-    color: Colors.LIGHT_GREY,
-    fontWeight: 400,
-    fontSize: '12px', 
-    display: 'flex', 
-    alignItems: 'center',
-    letterSpacing: '0.5px', 
+  image: {
+    width: '60px',
+    height: '60px',
+    borderRadius: '5px',
+    objectFit: 'cover',
+    marginRight: '10px',
   },
-  navLinkHover: {
-    color: Colors.LIGHT_GREY,
-  },
-  activeNavItem: {
-    color: Colors.BLACK,
-    fontWeight: 300,
-  },
-  linkContent: {
+  textContainer: {
     display: 'flex',
-    alignItems: 'center',
+    FlexDirection: 'column',
   },
-  dot: {
-    display: 'inline-block',
-    width: '5px',
-    height: '5px',
-    opacity: 0,
-    marginRight: '5px',
-    marginBottom: '1px',    
+  title: {
+    margin: '0',
+    fontSize: '16px',
+    fontWeight: 'bold',
   },
-  activeDot: {
-    opacity: 1,
-    backgroundColor: Colors.BLACK,
-    animation: 'dotGrow 0.2s ease-in-out forwards',
+  subtitle: {
+    margin: '0',
+    fontSize: '12px',
+    color: '#555',
   },
 };
 

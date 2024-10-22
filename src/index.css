@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Everett-Regular';
-  src: url('./assets/fonts/Everett-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Everett-Regular.woff2') format('woff2');
+  font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
@@ -36,3 +38,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-select {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+

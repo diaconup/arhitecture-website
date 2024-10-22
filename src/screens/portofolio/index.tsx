@@ -2,7 +2,7 @@ import React from 'react';
 
 const Portofolio = () => {
   return (
-    <div className="font-medium">Portofoliul meu</div>
+    <div >Portofoliul meu</div>
   );
 };
 
