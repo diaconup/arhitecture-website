@@ -5,3 +5,4 @@ export enum FontTypes {
     SEMI_BOLD = 'Comfortaa-SemiBold',
     MEDIUM = 'Everett-Regular',
 }
+

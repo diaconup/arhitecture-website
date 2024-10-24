@@ -1,30 +1,45 @@
+import { Colors } from '../../utils/colors';
+import { FontTypes } from '../../utils/const';
+
 export const styles = {
-  container: {
+  portfolioItem: {
     display: 'flex',
-    alignItems: 'center',
-    padding: '10px',
-    borderBottom: '1px solid #ddd',
+    alignItems: 'flex-start',
+    margin: '20px 0',
+    position: 'relative' as 'relative', // Add this line
   },
-  image: {
-    width: '60px',
-    height: '60px',
-    borderRadius: '5px',
-    objectFit: 'cover',
-    marginRight: '10px',
+  iconTextContainer: {
+    display: 'flex',
+    flexDirection: 'column' as 'column',
+    alignItems: 'flex-end', 
+    marginRight: '20px', 
   },
   textContainer: {
+    textAlign: 'right' as 'right',
+    fontFamily: FontTypes.MEDIUM,
+    overflow: 'hidden',
+  },
+  imageContainer: {
     display: 'flex',
-    FlexDirection: 'column',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  image: {
+    maxWidth: '22vw',
+    maxHeight: '44vh',
+    objectFit: 'cover' as 'cover',
+    margin: '0 auto',
+  },
+  icon: {
+    width: '5.3vh',
+    height: '2.6vw',
+  },
+  location: {
+    color: Colors.LIGHT_GREY,
+    fontSize: '11px',
   },
   title: {
-    margin: '0',
-    fontSize: '16px',
-    fontWeight: 'bold',
-  },
-  subtitle: {
-    margin: '0',
-    fontSize: '12px',
-    color: '#555',
+    color: Colors.BLACK,
+    fontSize: '14px',
   },
 };
-

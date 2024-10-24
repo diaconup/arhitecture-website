@@ -1,22 +1,27 @@
 import React from 'react';
 import { styles } from './styles';
+import { Item } from '../../utils/types';
 
 interface ListItemProps {
-    imageUrl: string;
-    title: string;
-    subtitle: string;
-  }
-  
-const ListItem: React.FC<ListItemProps> = ({ imageUrl, title, subtitle }) => {
-    return (
-      <div style={styles.container}>
-        <img src={imageUrl} alt={title} style={styles.image as React.CSSProperties} />
+  item: Item;
+}
+
+const ListItem: React.FC<ListItemProps> = ({ item }) => {
+  return (
+    <div style={styles.portfolioItem} className='no-select'>
+      <div style={styles.iconTextContainer}>
+        <img src={item.iconUrl} alt={`${item.title} icon`} style={styles.icon} />
         <div style={styles.textContainer}>
-          <h3 style={styles.title}>{title}</h3>
-          <p style={styles.subtitle}>{subtitle}</p>
+          <p style={styles.title}>{item.title}</p>
+          <p style={styles.location}>{item.location}</p>
         </div>
       </div>
-    );
-  };
+
+      <div style={styles.imageContainer}>
+        <img src={item.baseImageUrl} alt={item.title} style={styles.image} />
+      </div>
+    </div>
+  );
+};
 
 export default ListItem;
