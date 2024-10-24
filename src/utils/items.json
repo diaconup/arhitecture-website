@@ -24,7 +24,7 @@
     },
     {
         "id": 3,
-        "title": "Title 3",
+        "title": "Plaja Mamaia Nord",
         "location": "LOCATION 3 ROMANIA",
         "about": ["Small text 3", "Another text for Title 3"],
         "baseImageUrl": "../images/image3.jpg",
@@ -33,8 +33,8 @@
     },
     {
         "id": 4,
-        "title": "Title 4",
-        "location": "Location 4",
+        "title": "Gradina Botanică",
+        "location": "Cluj-Napoca",
         "about": ["Small text 4"],
         "baseImageUrl": "../images/image4.jpg", 
         "imageUrl": [
@@ -45,8 +45,8 @@
     },
     {
         "id": 5,
-        "title": "Title 5",
-        "location": "Location 5",
+        "title": "Atelierul UTCN",
+        "location": "Cluj-Napoca",
         "about": [],
         "baseImageUrl": "../images/image5.jpg",
         "imageUrl": ["../images/image5.jpg"],

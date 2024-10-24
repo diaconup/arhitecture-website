@@ -3,31 +3,30 @@ import { FontTypes } from '../../utils/const';
 
 export const styles = {
   portfolioItem: {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: '20% 80%',
     margin: '20px 0',
     alignItems: 'flex-start',
+    paddingRight: '60px',
   },
   iconTextContainer: {
-    display: 'inline-block',
-    width: '30%',
-    height: '100%',
+    display: 'block',
+    textAlign: 'right' as 'right',
     marginRight: '15px',
-    textAlign: 'right' as 'right', // Aligns the content to the right
   },
   textContainer: {
     textAlign: 'right' as 'right',
     fontFamily: FontTypes.MEDIUM,
-    overflow: 'hidden',
+    height: '50px',
+    lineHeight: '1.5',
+    padding: '2px'
   },
   imageContainer: {
-    display: 'inline-block',
-    width: '80%', 
-    height: '100%',
+    display: 'block', 
     verticalAlign: 'top',
   },
   image: {
-    maxWidth: '70%', 
-    maxHeight: '559px',
+    width: '459px', 
     objectFit: 'cover' as 'cover',
   },
   icon: {
