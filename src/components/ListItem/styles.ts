@@ -4,15 +4,15 @@ import { FontTypes } from '../../utils/const';
 export const styles = {
   portfolioItem: {
     display: 'flex',
-    alignItems: 'flex-start',
     margin: '20px 0',
-    position: 'relative' as 'relative', // Add this line
+    alignItems: 'flex-start',
   },
   iconTextContainer: {
-    display: 'flex',
-    flexDirection: 'column' as 'column',
-    alignItems: 'flex-end', 
-    marginRight: '20px', 
+    display: 'inline-block',
+    width: '30%',
+    height: '100%',
+    marginRight: '15px',
+    textAlign: 'right' as 'right', // Aligns the content to the right
   },
   textContainer: {
     textAlign: 'right' as 'right',
@@ -20,23 +20,25 @@ export const styles = {
     overflow: 'hidden',
   },
   imageContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    flex: 1,
+    display: 'inline-block',
+    width: '80%', 
+    height: '100%',
+    verticalAlign: 'top',
   },
   image: {
-    maxWidth: '22vw',
-    maxHeight: '44vh',
+    maxWidth: '70%', 
+    maxHeight: '559px',
     objectFit: 'cover' as 'cover',
-    margin: '0 auto',
   },
   icon: {
-    width: '5.3vh',
-    height: '2.6vw',
+    width: '50px',
+    height: '50px',
+    display: 'inline-block',
   },
   location: {
     color: Colors.LIGHT_GREY,
     fontSize: '11px',
+    textTransform: 'uppercase' as 'uppercase',
   },
   title: {
     color: Colors.BLACK,

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "BIG HQ",
+        "title": "BIG HQ Bla bla",
         "location": "COPENHAGEN, DENMARK",
         "about": ["Small text 1", "Additional text 1"],
         "baseImageUrl": "../images/image1.jpg",
@@ -12,8 +12,8 @@
     },
     {
         "id": 2,
-        "title": "Title 2",
-        "location": "Location 2 bla bla bla",
+        "title": "Bloc Comunist Nou",
+        "location": "CLUJ-NAPOCA, ROMANIA",
         "about": ["Small text 2"],
         "baseImageUrl": "../images/image2.jpg", 
         "imageUrl": [
@@ -25,7 +25,7 @@
     {
         "id": 3,
         "title": "Title 3",
-        "location": "Location 3",
+        "location": "LOCATION 3 ROMANIA",
         "about": ["Small text 3", "Another text for Title 3"],
         "baseImageUrl": "../images/image3.jpg",
         "imageUrl": ["../images/image3.jpg"],
