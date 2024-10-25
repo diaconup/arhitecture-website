@@ -1,0 +1,49 @@
+@keyframes drop {
+  0% {
+    transform: translateY(-50px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+@keyframes grow {
+  from {
+    width: 459px;
+    height: auto;
+  }
+  to {
+    width: 999px;
+    height: auto;
+    
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 999px;
+    height: auto;
+  }
+  to {
+    width: 459px;
+    height: auto;
+  }
+}
+
+
+@keyframes growAndSlideLeft {
+  0% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translateX(-20px); /* Adjust translation as needed */
+    opacity: 0.5; /* Optional: adjust opacity during transition */
+  }
+}
+
+.grow-and-slide {
+  animation: growAndSlideLeft 0.5s forwards; /* Adjust duration as needed */
+}
+

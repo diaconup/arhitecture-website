@@ -7,8 +7,8 @@ import { styles } from './styles';
 const Portfolio: React.FC = () => {
   return (
     <div style={styles.portfolioContainer}>
-      {items.map((item: Item) => (
-        <ListItem key={item.id} item={item} />
+      {items.map((item: Item, index: number) => (
+        <ListItem key={item.id} item={item} index={index} />
       ))}
     </div>
   );
