@@ -24,11 +24,10 @@ const ListItem: React.FC<ListItemProps> = ({ item, index }) => {
 
   const handleImageClick = useCallback((idx: number) => {
     if (enlargedIndex === idx) {
-      // If clicking on the currently enlarged image, reset to single view
       setIsSliderActive(false);
       setEnlargedIndex(null);
     } else {
-      setEnlargedIndex(idx); // Set to new index
+      setEnlargedIndex(idx);
     }
   }, [enlargedIndex]);
 

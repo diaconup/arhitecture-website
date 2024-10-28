@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { styles } from './styles';
 import ListItem from '../../components/NavItem';
 
@@ -9,10 +9,10 @@ type CustomHeaderProps = {
 const CustomHeader: React.FC<CustomHeaderProps> = ({ showPage }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const handleClick = (index: number, page: string): void => {
+  const handleClick = useCallback((index: number, page: string): void => {
     setActiveIndex(prevIndex => (prevIndex === index ? null : index)); 
     showPage(page);
-  };
+  }, [showPage]);
 
   return (
     <nav style={styles.navbar}>

@@ -7,7 +7,7 @@ export const styles = {
     maxWidth: '85%',
     margin: '0 auto',
     padding: '40px 20px',
-    animation: 'slideIn 0.5s ease-out forwards',
+    animation: 'slideIn 1s ease-out forwards',
   },
   aboutTitle: {
     textAlign: 'left' as 'left',
