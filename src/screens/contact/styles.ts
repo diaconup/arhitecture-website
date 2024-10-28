@@ -6,6 +6,4 @@ export const styles = {
     alignItems: 'flex-start',
     paddingRight: '60px',
   },
-
- 
 };

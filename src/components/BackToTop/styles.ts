@@ -5,7 +5,7 @@ export const styles = {
     button: {
         bottom: '30px',
         right: '30px',
-        padding: '10px 15px',
+        // padding: '10px 15px',
         fontSize: '16px',
         border: 'none',
         backgroundColor: Colors.WHITE,
