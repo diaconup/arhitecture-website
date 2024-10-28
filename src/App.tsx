@@ -19,7 +19,7 @@ export default function App() {
       <div>
         {activePage === 'portfolio' && <Portofolio />}
         {activePage === 'about' && <About />}
-        {activePage === 'contact' && <Contact />}
+        {activePage === 'contact' && <Contact/>}
       </div>
     </>
   );

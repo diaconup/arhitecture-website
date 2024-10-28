@@ -62,6 +62,10 @@ const ListItem: React.FC<ListItemProps> = ({ item, index }) => {
           freeMode={true}
           pagination={false}
           modules={[FreeMode, Pagination]}
+          grid={{
+            rows: 3,
+            fill: "column",
+          }}
           style={styles.swiper}
         >
           {item.imageUrl.map((imageUrl: string, i: number) => (

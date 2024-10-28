@@ -12,13 +12,13 @@ export const styles = {
     margin: '20px 0',
     alignItems: 'flex-start',
     paddingRight: '60px',
-  },
+    },
 
   iconTextContainer: {
     display: 'block',
     textAlign: 'right' as 'right',
     marginRight: '15px',
-
+    minWidth: '100px',
   },
 
   icon: {
@@ -77,6 +77,7 @@ export const styles = {
     width: '100%', // Use viewport width to take full screen width
     height: 'auto', // Adjust as needed or set a specific height
     padding: '20px 0', // Optional: Add some vertical padding for better spacing
+    // boxSizing: 'border-box', // Ensure padding is included in the width
   },
   slideContent: {
     display: 'flex',

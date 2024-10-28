@@ -47,3 +47,6 @@
   animation: growAndSlideLeft 0.5s forwards; /* Adjust duration as needed */
 }
 
+.grow-image {
+  animation: growImage 0.5s forwards; /* Duration of 0.5s, adjust if needed */
+}
