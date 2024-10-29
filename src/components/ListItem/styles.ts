@@ -20,6 +20,7 @@ export const styles = {
     textAlign: 'right' as 'right',
     marginRight: '15px',
     minWidth: '100px',
+    animation: 'slideLeft 0.5s forwards',
   },
 
   icon: {
@@ -84,6 +85,7 @@ export const styles = {
     FlexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center' as 'center',
+    minWidth: '100%',
   },
   enlargedSpacing: {
     marginTop: '20px',

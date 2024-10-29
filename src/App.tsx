@@ -21,9 +21,9 @@ export default function App() {
 
   return (
     <>
-      {showWelcome ? (
+      {/* {showWelcome ? (
         <Welcome />
-      ) : (
+      ) : ( */}
         <>
           <CustomHeader showPage={showPage} />
           <div>
@@ -32,7 +32,7 @@ export default function App() {
             {activePage === 'contact' && <Contact />}
           </div>
         </>
-      )}
+      {/* )} */}
     </>
   );
 }

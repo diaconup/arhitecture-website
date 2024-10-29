@@ -43,12 +43,15 @@
   }
 }
 
-.grow-and-slide {
-  animation: growAndSlideLeft 0.5s forwards;
-}
-
-.grow-image {
-  animation: growImage 0.5s forwards; 
+@keyframes slideLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes drop {

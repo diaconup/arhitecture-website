@@ -20,6 +20,13 @@ const ListItem: React.FC<ListItemProps> = ({ item, index }) => {
   const handleInitialImageClick = useCallback(() => {
     setIsSliderActive(true);
     setEnlargedIndex(0);
+    setTimeout(() => {
+      const container = document.querySelector('.icon-text-container'); 
+      if (container) {
+        container.classList.add('animate'); 
+        setTimeout(() => container.classList.remove('animate'), 100);
+      }
+    }, 0);
   }, []);
 
   const handleImageClick = useCallback((idx: number) => {
@@ -34,17 +41,18 @@ const ListItem: React.FC<ListItemProps> = ({ item, index }) => {
   return (
     <div style={styles.container}>
       <div
-        style={{
-          ...styles.iconTextContainer,
-          ...(enlargedIndex !== null ? styles.enlargedSpacing : {}),
-        }}
-      >
-        <img src={item.iconUrl} alt={`${item.title} icon`} style={styles.icon} />
-        <div style={styles.textContainer}>
-          <p style={styles.title}>{item.title}</p>
-          <p style={styles.location}>{item.location}</p>
-        </div>
-      </div>
+  className={`icon-text-container ${enlargedIndex !== null ? 'enlarged' : ''}`}
+  style={{
+    ...styles.iconTextContainer,
+    ...(enlargedIndex !== null ? styles.enlargedSpacing : {}),
+  }}
+>
+  <img src={item.iconUrl} alt={`${item.title} icon`} style={styles.icon} />
+  <div style={styles.textContainer}>
+    <p style={styles.title}>{item.title}</p>
+    <p style={styles.location}>{item.location}</p>
+  </div>
+</div>
 
       {!isSliderActive ? (
         <div style={styles.imageContainer} onClick={handleInitialImageClick}>
@@ -57,14 +65,9 @@ const ListItem: React.FC<ListItemProps> = ({ item, index }) => {
       ) : (
         <Swiper
           slidesPerView={'auto' as 'auto'}
-          spaceBetween={20}
           freeMode={true}
           pagination={false}
           modules={[FreeMode, Pagination]}
-          grid={{
-            rows: 3,
-            fill: "column",
-          }}
           style={styles.swiper}
         >
           {item.imageUrl.map((imageUrl: string, i: number) => (
