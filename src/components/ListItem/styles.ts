@@ -74,18 +74,17 @@ export const styles = {
     animation: 'grow 1s ease-in-out forwards',
   },
   swiper: {
-    width: '100%', // Use viewport width to take full screen width
-    height: 'auto', // Adjust as needed or set a specific height
-    padding: '20px 0', // Optional: Add some vertical padding for better spacing
-    // boxSizing: 'border-box', // Ensure padding is included in the width
+    width: '100%',
+    height: 'auto', 
+    padding: '20px 0', 
   },
   slideContent: {
     display: 'flex',
-    FlexDirection: 'column', // Stack icon, title, location, and image vertically
-    alignItems: 'center', // Center content horizontally
-    textAlign: 'center' as 'center', // Center text
+    FlexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center' as 'center',
   },
   enlargedSpacing: {
-    marginTop: '20px', // Adjust this value as needed
+    marginTop: '20px',
   },
 };

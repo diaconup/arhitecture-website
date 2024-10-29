@@ -1,10 +1,10 @@
 
-import './App.css';
 import CustomHeader from './navigation/CustomHeader';
 import Contact from './screens/contact';
 import About from './screens/about';
 import Portofolio from './screens/portofolio';
 import { useCallback, useState } from 'react';
+
 
 export default function App() {
   const [activePage, setActivePage] = useState<string>('portfolio');

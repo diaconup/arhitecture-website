@@ -6,4 +6,5 @@ export const FONT_MAPPING = {
     [FontTypes.REGULAR]: require('../assets/fonts/Comfortaa-Regular.ttf'),
     [FontTypes.SEMI_BOLD]: require('../assets/fonts/Comfortaa-SemiBold.ttf'),
     [FontTypes.MEDIUM]: require('../assets/fonts/Comfortaa-Medium.ttf'),
+    [FontTypes.LOGO]: require('../assets/fonts/RubikMonoOne-Regular.ttf'),
 };

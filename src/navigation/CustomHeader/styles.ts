@@ -5,6 +5,8 @@ export const styles = {
     justifyContent: 'center',
     backgroundColor: Colors.WHITE,
     padding: '20px 0',
+    position: 'sticky' as 'sticky',
+    top: '0',
   },
   navList: {
     listStyle: 'none',

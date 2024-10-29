@@ -4,5 +4,6 @@ export enum FontTypes {
     REGULAR = 'Comfortaa-Regular',
     SEMI_BOLD = 'Comfortaa-SemiBold',
     MEDIUM = 'Everett-Regular',
+    LOGO = 'RubikMonoOne-Regular',
 }
 

@@ -7,23 +7,25 @@
         "baseImageUrl": "../images/image1.jpg",
         "imageUrl": [
             "../images/image1.jpg",
-            "../images/image1_alt.jpg",
-            "../images/image2_alt.jpg",
-            "../images/image3_alt.jpg"
+            "../images/image1_alt1.jpg",
+            "../images/image1_alt2.jpg"
         ],
         "iconUrl": "../images/icon1.png"
     },
     {
         "id": 2,
-        "title": "Colective",
+        "title": "Locuinte Colective",
         "location": "CLUJ-NAPOCA, Strada Horea",
         "about": ["Small text 2"],
         "baseImageUrl": "../images/image2.jpg", 
         "imageUrl": [
             "../images/image2.jpg", 
-            "../images/image2_alt.jpg"
+            "../images/image2_alt1.jpg",
+            "../images/image2_alt2.jpg",
+            "../images/image2_alt3.jpg",
+            "../images/image2_alt4.jpg"
         ],
-        "iconUrl": "../images/icon1.png"
+        "iconUrl": "../images/icon2.png"
     },
     {
         "id": 3,
@@ -31,8 +33,10 @@
         "location": "CLUJ-NAPOCA, Facultatea de Instalatii",
         "about": ["Small text 3", "Another text for Title 3"],
         "baseImageUrl": "../images/image3.jpg",
-        "imageUrl": ["../images/image3.jpg"],
-        "iconUrl": "../images/icon1.png"
+        "imageUrl": ["../images/image3.jpg",
+                    "../images/image3_alt1.jpg"
+    ],
+        "iconUrl": "../images/icon3.png"
     },
     {
         "id": 4,
@@ -42,11 +46,11 @@
         "baseImageUrl": "../images/image4.jpg", 
         "imageUrl": [
             "../images/image4.jpg",
-            "../images/image1_alt.jpg",
-            "../images/image2_alt.jpg",
-            "../images/image3_alt.jpg"
+            "../images/image4_alt1.jpg",
+            "../images/image4_alt2.jpg",
+            "../images/image4_alt3.jpg"
         ],
-        "iconUrl": "../images/icon1.png"
+        "iconUrl": "../images/icon4.png"
     },
     {
         "id": 5,
@@ -54,25 +58,33 @@
         "location": "Cluj-Napoca, Strada Traian",
         "about": [],
         "baseImageUrl": "../images/image5.jpg",
-        "imageUrl": ["../images/image5.jpg"],
-        "iconUrl": "../images/icon1.png"
+        "imageUrl": [
+            "../images/image5.jpg",
+            "../images/image5_alt1.jpg",
+            "../images/image5_alt2.jpg"
+        ],
+        "iconUrl": "../images/icon5.png"
     },
     {
         "id": 6,
         "title": "Pavilion",
         "location": "Cluj-Napoca, Centrala",
         "about": [],
-        "baseImageUrl": "../images/image5.jpg",
-        "imageUrl": ["../images/image5.jpg"],
-        "iconUrl": "../images/icon1.png"
+        "baseImageUrl": "../images/image6.jpg",
+        "imageUrl": ["../images/image6.jpg"],
+        "iconUrl": "../images/icon6.png"
     },
     {
         "id": 7,
         "title": "Reabilitare Hala",
         "location": "Reșita",
         "about": [],
-        "baseImageUrl": "../images/image5.jpg",
-        "imageUrl": ["../images/image5.jpg"],
-        "iconUrl": "../images/icon1.png"
+        "baseImageUrl": "../images/image7.jpg",
+        "imageUrl": [
+            "../images/image7.jpg",
+            "../images/image7_alt1.jpg",
+            "../images/image7_alt2.jpg"
+        ],
+        "iconUrl": "../images/icon7.png"
     }
 ]
