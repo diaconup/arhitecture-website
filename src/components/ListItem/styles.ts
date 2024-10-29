@@ -12,6 +12,7 @@ export const styles = {
     margin: '20px 0',
     alignItems: 'flex-start',
     paddingRight: '60px',
+    animation: 'drop 1.5s forwards',
     },
 
   iconTextContainer: {
@@ -65,7 +66,7 @@ export const styles = {
     width: `${IMAGE_WIDTH}px`,
     height: 'auto',
     transition: 'transform 0.3s ease-in-out',
-    animation: 'shrink 1s ease-in-out forwards',
+    animation: 'drop 1s ease-in-out forwards',
   },
   enlargedImage: {
     width: `${IMAGE_WIDTH * 2}px`, 
