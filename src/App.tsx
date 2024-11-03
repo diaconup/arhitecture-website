@@ -5,6 +5,7 @@ import Contact from './screens/contact';
 import About from './screens/about';
 import Portofolio from './screens/portofolio';
 import Welcome from './screens/welcome';
+import './i18n';
 
 export default function App() {
   const [activePage, setActivePage] = useState<string>('portfolio');
@@ -21,9 +22,9 @@ export default function App() {
 
   return (
     <>
-      {/* {showWelcome ? (
+      {showWelcome ? (
         <Welcome />
-      ) : ( */}
+      ) : (
         <>
           <CustomHeader showPage={showPage} />
           <div>
@@ -32,7 +33,7 @@ export default function App() {
             {activePage === 'contact' && <Contact />}
           </div>
         </>
-      {/* )} */}
+      )}
     </>
   );
 }

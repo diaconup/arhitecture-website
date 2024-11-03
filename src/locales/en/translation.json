@@ -1,0 +1,44 @@
+{
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact1": "Contact",
+
+    "aboutMe": {
+    "title": "ABOUT ME",
+    "intro": "I am a fifth-year student at the Faculty of Architecture and Urbanism, training to become an architect—a profession that has the power to transform spaces into meaningful experiences for people. Throughout my years of study, I have discovered that architecture is much more than designing buildings or configuring spaces—it is a complex art and a science that involves a profound understanding of how people interact with the built environment, the emotions a space can evoke, and its impact on the community and surrounding nature.",
+    "inspiration": "Architecture creates invisible connections between people, places, and times. This inspires me to want to contribute to the creation of spaces that speak not only about aesthetics and functionality but also about identity, sustainability, and innovation.",
+    "reading": "Currently, I am reading Atomic Habits by James Clear. The book explores the idea of small, consistent changes to improve long-term performance. This philosophy is perfectly applicable to architecture, where continuous evolution and innovation are key to creating relevant and impactful spaces.",
+    "education": "Education",
+    "university": "Faculty of Architecture and Urbanism",
+    "universityDates": "Oct 2020 - Present",
+    "universityLocation": "Cluj-Napoca, Romania",
+    "highSchool": "National College - Mircea Eliade",
+    "highSchoolDates": "Sep 2016 - Oct 2020",
+    "highSchoolLocation": "Sighișoara, Romania",
+    "technicalSkills": "Technical Skills",
+    "skills": "ArchiCAD / Adobe Photoshop / Lightroom / Lumion / TwinMotion"
+    },
+
+    "contact": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "messageLabel": "Your message",
+    "messagePlaceholder": "Enter your message...",
+    "submitButton": "Send message",
+    "emailButton": "EMAIL +",
+    "socialButton": "SOCIAL +",
+    "phoneButton": "PHONE +",
+    "emailMessage": "ariana.rotar@yahoo.com",
+    "socialMessage": "INSTAGRAM",
+    "phoneMessage": "(+40) 772 260 454",
+    "successAlert": "Your message has been sent successfully!",
+    "errorAlert": "There was an error sending your message. Please try again.",
+    "instagramLink": "https://www.instagram.com/ariananassss/"
+  },
+  "backToTop": {
+    "buttonLabel": "Back to Top"
+  }
+}
+  

@@ -1,0 +1,43 @@
+{
+    "portfolio": "Portofoliu",
+    "about": "Despre",
+    "contact1": "Contact",
+
+    "aboutMe": {
+    "title": "DESPRE MINE",
+    "intro": "Sunt studentă în anul V la Facultatea de Arhitectură și Urbanism, unde mă pregătesc să devin arhitect, o profesie ce are puterea de a transforma spatiile în experiente semnificative pentru oameni. De-a lungul anilor de studiu, am descoperit că arhitectura înseamnă mult mai mult decât proiectarea de clădiri sau configurarea spatiilor - este o artă complexă și o știintă în același timp, ce implică întelegerea profundă a modului în care oamenii interactionează cu mediul construit, a emotiilor pe care un spatiu le poate evoca și a impactului asupra comunitătii și naturii din jur.",
+    "inspiration": "Arhitectura creează legături invizibile între oameni, locuri și timpuri, iar acest lucru mă inspiră să îmi doresc să contribui la crearea unor spatii care să vorbească nu doar despre estetică și functionalitate, ci și despre identitate, sustenabilitate și inovație.",
+    "reading": "În momentul de fată citesc Atomic Habits de James Clear. Cartea explorează ideea schimbărilor mici și constante pentru îmbunătățirea performantei pe termen lung. Această filozofie este perfect aplicabilă și în arhitectură, unde evoluția continuă și inovatia sunt cheia pentru a crea spatii relevante și de impact.",
+    "education": "Educatie",
+    "university": "Facultatea de Arhitectură și Urbanism",
+    "universityDates": "Oct 2020 - În Prezent",
+    "universityLocation": "Cluj-Napoca, România",
+    "highSchool": "Colegiul National - Mircea Eliade",
+    "highSchoolDates": "Sep 2016 - Oct 2020",
+    "highSchoolLocation": "Sighișoara, România",
+    "technicalSkills": "Aptitudini Tehnice",
+    "skills": "ArchiCAD / Adobe Photoshop / Lightroom / Lumion / TwinMotion"
+    },
+    "contact": {
+    "nameLabel": "Nume complet",
+    "namePlaceholder": "Introduceti numele dvs.",
+    "emailLabel": "Adresa de email",
+    "emailPlaceholder": "Introduceti emailul dvs.",
+    "messageLabel": "Mesajul dvs.",
+    "messagePlaceholder": "Introduceti mesajul dvs...",
+    "submitButton": "Trimite mesajul",
+    "emailButton": "EMAIL +",
+    "socialButton": "SOCIAL +",
+    "phoneButton": "TELEFON +",
+    "emailMessage": "ariana.rotar@yahoo.com",
+    "socialMessage": "INSTAGRAM",
+    "phoneMessage": "(+40) 772 260 454",
+    "successAlert": "Mesajul dvs. a fost trimis cu succes!",
+    "errorAlert": "A apărut o eroare la trimiterea mesajului. Vă rugăm să încercati din nou.",
+    "instagramLink": "https://www.instagram.com/ariananassss/"
+  },
+  "backToTop": {
+    "buttonLabel": "Înapoi sus"
+  }
+}
+  

@@ -1,8 +1,11 @@
 import React, { useCallback, useState } from 'react'; // Import useState
 import { styles } from './styles';
 import { Colors } from '../../utils/colors';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,7 +18,7 @@ const Contact = () => {
     button3: '',
   });
 
-  const handleChange = useCallback((event: any) => {
+  const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -37,13 +40,12 @@ const Contact = () => {
     }
   }, []);
 
-  const onSubmit = async (event: any) => {
+  const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
     const apiKey = process.env.REACT_APP_API_KEY;
     if (apiKey) {
       const dataToSubmit = { ...formData, access_key: apiKey };
-
       const json = JSON.stringify(dataToSubmit);
 
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -56,10 +58,10 @@ const Contact = () => {
       }).then((res) => res.json());
 
       if (res.success) {
-        alert("Your message has been sent successfully!");
+        alert(t('contact.successAlert'));
         setFormData({ name: '', email: '', message: '' });
       } else {
-        alert("There was an error sending your message. Please try again.");
+        alert(t('contact.errorAlert'));
       }
     } else {
       console.error("API key is not defined");
@@ -68,61 +70,76 @@ const Contact = () => {
 
   return (
     <div>
-    <section style={styles.contact}>
-      <form style={styles.form} onSubmit={onSubmit}>
-        <div style={styles.inputBox}>
-          <label>Full Name</label>
-          <input
-            type="text"
-            style={styles.field}
-            placeholder='Enter your name'
-            name='name'
-            value={formData.name}
-            onChange={handleChange} // Update state on change
-            required
-          />
-        </div>
-        <div style={styles.inputBox}>
-          <label>Email Address</label>
-          <input
-            type="email"
-            style={styles.field}
-            placeholder='Enter your email'
-            name='email'
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div style={styles.inputBox}>
-          <label>Your message</label>
-          <textarea
-            style={styles.fieldMess}
-            placeholder='Enter your message...'
-            name='message'
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
-        <button type='submit' style={styles.button}>Send message</button>
-      </form>
-    </section>
+      <section style={styles.contact}>
+        <form style={styles.form} onSubmit={onSubmit}>
+          <div style={styles.inputBox}>
+            <label>{t('contact.nameLabel')}</label>
+            <input
+              type="text"
+              style={styles.field}
+              placeholder={t('contact.namePlaceholder')}
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div style={styles.inputBox}>
+            <label>{t('contact.emailLabel')}</label>
+            <input
+              type="email"
+              style={styles.field}
+              placeholder={t('contact.emailPlaceholder')}
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div style={styles.inputBox}>
+            <label>{t('contact.messageLabel')}</label>
+            <textarea
+              style={styles.fieldMess}
+              placeholder={t('contact.messagePlaceholder')}
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+          <button type="submit" style={styles.button}>{t('contact.submitButton')}</button>
+        </form>
+      </section>
 
-    <div style={styles.buttonContainer}>
+      <div style={styles.buttonContainer}>
         <div style={styles.buttonWrapper}>
-          <button style={styles.buttonWide} onClick={() => handleButtonClick('button1', 'ariana.rotar@yahoo.com')}>EMAIL +</button>
-          {buttonMessages.button1 && <p style={styles.message}>{buttonMessages.button1}</p>} 
+          <button
+            style={styles.buttonWide}
+            onClick={() => handleButtonClick('button1', t('contact.emailMessage'))}
+          >
+            {t('contact.emailButton')}
+          </button>
+          {buttonMessages.button1 && <p style={styles.message}>{buttonMessages.button1}</p>}
         </div>
-        
+
         <div style={styles.buttonWrapper}>
-          <button style={styles.buttonWide} onClick={() => handleButtonClick('button2', 'INSTAGRAM')}>SOCIAL +</button>
-          {buttonMessages.button2 && <p style={styles.message}>{buttonMessages.button2}</p>} 
+          <button
+            style={styles.buttonWide}
+            onClick={() => handleButtonClick('button2', t('contact.socialMessage'))}
+          >
+            {t('contact.socialButton')}
+          </button>
+          {buttonMessages.button2 && <p style={styles.message}>{buttonMessages.button2}</p>}
         </div>
-        
+
         <div style={styles.buttonWrapper}>
-          <button style={styles.buttonWide} onClick={() => handleButtonClick('button3', '(+40) 772 260 454')}>PHONE +</button>
-          {buttonMessages.button3 && <p style={styles.message}>{buttonMessages.button3}</p>} 
+          <button
+            style={styles.buttonWide}
+            onClick={() => handleButtonClick('button3', t('contact.phoneMessage'))}
+          >
+            {t('contact.phoneButton')}
+          </button>
+          {buttonMessages.button3 && <p style={styles.message}>{buttonMessages.button3}</p>}
         </div>
       </div>
     </div>

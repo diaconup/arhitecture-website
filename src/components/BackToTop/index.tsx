@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { styles } from './styles';
 
 const BackToTop = () => {
+    const { t } = useTranslation();
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const BackToTop = () => {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', // Smooth scroll
+            behavior: 'smooth', 
         });
     };
 
@@ -33,14 +35,13 @@ const BackToTop = () => {
                 <button
                     onClick={scrollToTop}
                     style={styles.button}
-                    aria-label="Back to top"
+                    aria-label={t('backToTop.buttonLabel')} 
                 >
-                    Back to Top
+                    {t('backToTop.buttonLabel')} 
                 </button>
             )}
         </>
     );
 };
-
 
 export default BackToTop;
